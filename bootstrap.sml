@@ -917,7 +917,7 @@ fun main () =
       
       val args' = parseArgs args 
 
-      val _ = if length args' < 1 then raise Fail "Usage: kupeg [-v] filename.kpg" else ()
+      val _ = if length args' < 1 then raise Fail "Usage: kupeg [-v] filename.peg" else ()
 		
       val filename = hd args'    
  
@@ -1073,7 +1073,7 @@ fun main () =
 
       (* Generate the output file *)
 			
-      val fo = TextIO.openOut (filename ^ ".k")
+      val fo = TextIO.openOut (filename ^ ".sml")
       val _ = TextIO.output (fo, "(* Generated from " ^ filename ^ " *)\n\n")
       val _ = TextIO.output (fo, "structure " ^ !nameSy ^ " =\nstruct\n")
       val _ = TextIO.output (fo, verbatim ^ "\n")
