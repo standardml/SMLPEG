@@ -35,7 +35,7 @@ fun main () =
       
       val args' = parseArgs args
 
-      val _ = if length args' < 1 then raise Fail "Usage: kupeg [-v] filename.kpg" else ()
+      val _ = if length args' < 1 then raise Fail "Usage: smlpeg [-v] filename.peg" else ()
 		
       val filename = hd args'  
 
