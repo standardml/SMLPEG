@@ -1,0 +1,4 @@
+provides: smlpeg 0.5.2
+maintainer: Gian Perrone <gdpe at itu dot dk>
+license: GPL3
+keywords: parser, parser generator, parsing expression grammars, pegs

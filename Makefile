@@ -28,6 +28,9 @@ smlpeg-bootstrap.peg.sml: smlpeg.bootstrap smlpeg.peg
 smlpeg.bootstrap: bootstrap.sml
 	$(COMPILER) -output smlpeg.bootstrap bootstrap.sml
 
+install: $(BIN)/smlpeg
+	mv $(BIN)/smlpeg ../../../bin
+
 .PRECIOUS: smlpeg.peg.sml
 
 clean:
